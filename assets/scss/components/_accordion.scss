@@ -351,7 +351,7 @@
                 top: 0px;
                 right: 0px;
                 position: absolute;
-                content: attr(badge-text);
+                content: attr(data-text);
                 transform: translate3d(30%, -40%, 0px);
                 line-height: 140%;
                 color: $white;
