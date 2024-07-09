@@ -72,6 +72,11 @@ body {
         border: none;
         line-height: 120%;
         z-index: 10;
+
+        transition: background 0.3s ease-in-out,
+                    color 0.3s ease-in-out;
+
+        cursor: pointer;
         
         bottom: vw(30px, 744px);
         border-radius: vw(125px, 320px);
@@ -100,6 +105,11 @@ body {
             width: vw(1360px);
             left: calc(50% - #{vw(680px)});
             transform: translateY(vw(-41px));
+
+            &:hover {
+                background: $white;
+                color: $black;
+            }
         }
         
         @media screen and (min-width: 1440px) {
@@ -111,6 +121,11 @@ body {
             width: 1360px;
             left: calc(50% - 680px);
             transform: translateY(-41px);
+        }
+        
+        &:active {
+            background: $white;
+            color: $black;
         }
     }
 }
