@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     'width': 400 * diff,
                     'height': 150 * diff,
-                    'left': 480 * diff,
+                    'left': 520 * diff,
                     'bottom': 0
                 }
             ];
