@@ -156,6 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 else {
                     let transform = 'translate3d(';
 
+                    if (!styles[currentSection + 1]) return;
+
                     transform += Math.abs(Math.round(styles[currentSection].left + (styles[currentSection + 1].left - styles[currentSection].left) * (progress - 0.1))) + "px";
                     transform += ",-";
                     transform += Math.round(styles[currentSection].bottom + (styles[currentSection + 1].bottom - styles[currentSection].bottom) * (progress - 0.1)) + "px";
