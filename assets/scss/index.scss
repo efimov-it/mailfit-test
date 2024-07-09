@@ -1,0 +1,131 @@
+@import "colors";
+@import "fonts";
+@import "helpers";
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: $black;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $gray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray-dark;
+        border-radius: 20px;
+        border: 0px solid $gray;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+}
+
+body {
+    background: $gray;
+    overflow-x: hidden;
+}
+
+.mft-{
+    
+    &hidden {
+        display: none;
+    }
+
+    &main {
+        
+        padding: 0px vw(20px, 320px);
+
+        @media screen and (min-width: 500px) {
+            padding: 0px vw(20px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            width: vw(1440px);
+            margin: 0px auto;
+            padding: 0px vw(40px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 1440px;
+            margin: 0px auto;
+            padding: 0px 40px;
+        }
+    }
+
+    &actionButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background: $red;
+        color: $white;
+        border: none;
+        line-height: 120%;
+        z-index: 10;
+        
+        bottom: vw(30px, 744px);
+        border-radius: vw(125px, 320px);
+        height: vw(52px, 320px);
+        font-size: vw(20px, 320px);
+        width: vw(280px, 320px);
+        padding: 0px vw(54px, 320px);
+        left: vw(20px, 320px);
+
+        @media screen and (min-width: 500px) {
+            bottom: vw(30px, 744px);
+            border-radius: vw(125px, 744px);
+            height: vw(52px, 744px);
+            font-size: vw(20px, 744px);
+            width: vw(704px, 744px);
+            padding: 0px vw(54px, 744px);
+            left: vw(20px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            bottom: vw(30px);
+            border-radius: vw(125px);
+            height: vw(90px);
+            font-size: vw(32px);
+            padding: 0px vw(54px);
+            width: vw(1360px);
+            left: calc(50% - #{vw(680px)});
+            transform: translateY(vw(-41px));
+        }
+        
+        @media screen and (min-width: 1440px) {
+            bottom: 30px;
+            border-radius: 125px;
+            height: 90px;
+            font-size: 32px;
+            padding: 0px 54px;
+            width: 1360px;
+            left: calc(50% - 680px);
+            transform: translateY(-41px);
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+}
+
+@media screen and (min-width: 920px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@import "components/index";
+@import "sections/index";

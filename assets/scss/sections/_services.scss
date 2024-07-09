@@ -1,0 +1,83 @@
+.mft-{
+    &servicesSection {
+        padding-top: vw(78px, 320px);
+        padding-bottom: vw(80px, 320px);
+
+        @media screen and (min-width: 500px) {
+            padding-top: vw(78px, 744px);
+            padding-bottom: vw(80px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            padding-top: vw(78px);
+            padding-bottom: vw(210px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            padding-top: 78px;
+            padding-bottom: 210px;
+        }
+        
+        &_header {
+            line-height: 100%;
+            font-weight: 500;
+            
+            font-size: vw(32px, 320px);
+            letter-spacing: vw(-1.92px, 320px);
+            margin-bottom: vw(40px, 320px);
+
+            @media screen and (min-width: 500px) {
+                font-size: vw(32px, 744px);
+                letter-spacing: vw(-1.92px, 744px);
+                margin-bottom: vw(40px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(64px);
+                letter-spacing: vw(-1.92px);
+                margin-bottom: vw(40px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 64px;
+                letter-spacing: -1.92px;
+                margin-bottom: 40px;
+            }
+        }
+        
+        &_line {
+            border: none;
+            border-bottom: solid $black;
+
+            border-bottom-width: vw(1px, 320px);
+            margin-bottom: vw(20px, 320px);
+
+            @media screen and (min-width: 500px) {
+                border-bottom-width: vw(1px, 744px);
+                margin-bottom: vw(20px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                border-bottom-width: vw(1px);
+                margin-bottom: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                border-bottom-width: 1px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+}
+
+@media screen and (min-width: 920px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
