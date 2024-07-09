@@ -112,12 +112,13 @@
         }
 
         @media screen and (min-width: 920px) {
-            
             gap: vw(16px);
+            padding-right: vw(76px);
         }
         
         @media screen and (min-width: 1440px) {
             gap: 16px;
+            padding-right: 76px;
         }
 
         &_item {
