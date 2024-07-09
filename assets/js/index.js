@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     // Drop down menu
     (function () {
         const dropDownMenuButton = document.querySelector('#dropDownMenuButton');
